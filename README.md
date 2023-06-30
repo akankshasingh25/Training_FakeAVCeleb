@@ -48,8 +48,8 @@ pip install -r requirements.txt
   -m                   model name = [MESO4, MESOINCEPTION4, XCEPTION, EFFICIENTB0, F3NET, LIPS, XRAY, HEADPOSE, EXPLOTING, CAPSULE]
   -v                   path of video data
   -a                   path of audio data
-  -vm                  path of video model (For evluation)
-  -am                  path of audio model (For evluation)
+  -vm                  path of video model (For evaluation)
+  -am                  path of audio model (For evaluation)
   -sm                  path to save best-model while training
   -l                   learning late (For training)
   -me                  number of epoch (For training)
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 To train and evaluate the model(s) in the paper, run this command:
 - **1. Unimodal**
     ```TRAIN
-   python triain_main.py -m=<model name> -v=<data path for video> -a=<data path for audio> 
+   python train_main.py -m=<model name> -v=<data path for video> -a=<data path for audio> 
     ```
    After train the model, you can **_soely evaluate_** the result.
     ```SOELY EVALUATION (Audio and Video, _respectively_.)
